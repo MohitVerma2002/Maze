@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="createMaze()">
+    <h1>The Maze</h1>
+    <select id="levelSelect">
+      <option value="1">Level 1</option>
+      <option value="2">Level 2</option>
+      <option value="3">Level 3</option>
+      <option value="4">Level 4</option>
+    </select>
+    <div id="mazeContainer">
+      <img
+        src="house.png"
+        id="house"
+        alt="house"
+        style="width: 50px; height: 50px"
+      />
+      <img
+        src="person.png"
+        id="person"
+        alt="person"
+        style="width: 50px; height: 50px"
+      />
+    </div>
+    <div id="instruction">
+      <p>Help! The person to reach his Home</p>
+    </div>
+    <div id="smallScreen">
+      <p>This Service is not available on mobile Devices</p>
+      <br />
+      <p>Kindly Switch to Laptop/Desktop to Enjoy the Service</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

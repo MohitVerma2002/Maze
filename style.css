@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+select {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin: 0.5rem;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: 600;
+}
+
+#mazeContainer {
+  border: 5px solid rgb(1, 84, 103);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+  width: max-content;
+}
+.row {
+  display: flex;
+}
+.column {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid rgb(204, 204, 204); */
+  background-color: white;
+}
+.wall {
+  background-color: black;
+  /* border: 1px solid rgb(40, 39, 39); */
+}
+
+#person {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+#house {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#instruction p {
+  margin-top: 1rem;
+  color: white;
+}
+
+#smallScreen {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  margin: 1rem;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  #mazeContainer {
+    display: block;
+  }
+  #smallScreen {
+    display: none;
+  }
+}
+@media (max-width: 910px) {
+  #mazeContainer {
+    display: none;
+  }
+  #instruction {
+    display: none;
+  }
+  #levelSelect {
+    display: none;
+  }
+  #smallScreen {
+    display: block;
+  }
+}
